@@ -178,3 +178,39 @@
     </script>
 </body>
 </html>
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <div class="bg-alpha-dark/70 p-6 rounded-lg border border-alpha-primary/30">
+            <div class="flex items-center justify-between">
+                <div>
+                    <h3 class="text-xl font-semibold text-alpha-primary mb-2">Документ "Пресечение нарушений со стороны персонала"</h3>
+                    <p class="text-sm text-alpha-light/80">Для ознакомления с документом "Пресечение нарушений со стороны персонала"</p>
+                </div>
+                <a href="https://gambitka.github.io/Ne-yvazaem-personal/" 
+                   class="inline-flex items-center px-4 py-2 bg-alpha-primary text-white rounded-md hover:bg-opacity-90 transition-all"
+                   target="_blank">
+                   <i data-feather="external-link" class="mr-2 w-4 h-4"></i>
+                   Перейти
+                </a>
+            </div>
+        </div>
+    </div>
+    <custom-footer></custom-footer>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/rank-badge.js"></script>
+    <script src="components/status-indicator.js"></script>
+    <script src="components/mission-timer.js"></script>
+<script>
+        feather.replace();
+        
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
