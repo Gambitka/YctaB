@@ -1,9 +1,11 @@
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALPHA Protocol</title>
-    <title>ALPHA</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ПСБ Protocol</title>
+<link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
@@ -13,10 +15,10 @@
                 extend: {
                     colors: {
                         alpha: {
-                            primary: '#A30008',
+                            primary: '#4a90e2',
                             dark: '#0F0F0F',
                             light: '#EFEFEF',
-                            accent: '#D94D4D'
+                            accent: '#4a90e2'
                         }
                     }
                 }
@@ -29,23 +31,31 @@
     <custom-header></custom-header>
 
     <main class="container mx-auto px-4 py-8 max-w-6xl">
-        <!-- Section 1: Introduction -->
-        <section id="intro" class="mb-16 scroll-mt-20">
-            <h2 class="text-3xl font-bold mb-6 text-alpha-primary border-b border-alpha-primary pb-2">Пункт 1. Знакомство</h2>
-            <div class="bg-alpha-dark/70 p-6 rounded-lg border border-alpha-primary/30">
-                <p class="mb-4">Приветствую тебя, Агент. Если ты читаешь этот документ, вероятно, ты уже попал в группу специального назначения, именующей себя как "ALPHA".</p>
-                <p class="mb-4">Отряд состоит из оперативников, прошедших строгий отбор по ряду параметров. Сюда нельзя попасть, не имея за своей спиной большого опыта и доверия руководства. Гордись своим званием и не срами его перед другими.</p>
-                <p class="text-alpha-accent">ALPHA — спец. отряд, нацеленный на обеспечение защиты и сохранения порядка в комплексе. Также отряд занимается выполнением поставленных лидерами задач или малых операций, попутно выполняя работу военной полиции и слежку за меньшими званиями Беты.</p>
+<!-- Section 1: Introduction -->
+<section id="intro" class="mb-16 scroll-mt-20">
+            <div class="flex justify-between items-center mb-4">
             </div>
+<h2 class="text-2xl font-bold mb-6 text-alpha-primary border-b border-alpha-primary pb-2">Пункт 1. Знакомство</h2>
+<div class="bg-alpha-dark/70 p-6 rounded-lg border border-alpha-primary/30">
+                <div class="flex items-center gap-4 mb-4">
+                    <p>Приветствую тебя, Агент. Если ты читаешь этот документ, вероятно, ты уже попал в группу специального назначения, именующей себя как "ALPHA".</p>
+                    <status-indicator status="online"></status-indicator>
+                </div>
+<p class="mb-4">Отряд состоит из оперативников, прошедших строгий отбор по ряду параметров. Сюда нельзя попасть, не имея за своей спиной большого опыта и доверия руководства. Гордись своим званием и не срами его перед другими.</p>
+                <p class="text-alpha-accent">ПСБ — спец. отряд, нацеленный на обеспечение защиты и сохранения порядка в комплексе. Также отряд занимается выполнением поставленных лидерами задач или малых операций, попутно выполняя работу военной полиции и слежку за меньшими званиями Беты.</p>
+</div>
         </section>
 
         <!-- Section 2: Squads -->
         <section id="squads" class="mb-16 scroll-mt-20">
-            <h2 class="text-3xl font-bold mb-6 text-alpha-primary border-b border-alpha-primary pb-2">Пункт 2. Отряды</h2>
-            <div class="grid md:grid-cols-2 gap-8">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-3xl font-bold mb-6 text-alpha-primary border-b border-alpha-primary pb-2">Пункт 2. Отряды</h2>
+                <rank-badge rank="commander" color="#4a90e2"></rank-badge>
+            </div>
+<div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-alpha-dark/70 p-6 rounded-lg border border-alpha-primary/30">
-                    <h3 class="text-2xl font-semibold text-alpha-primary mb-4">ALPHA A</h3>
-                    <ul class="space-y-2 list-disc pl-5">
+                    <h3 class="text-2xl font-semibold text-alpha-primary mb-4">ПСБ A</h3>
+<ul class="space-y-2 list-disc pl-5">
                         <li>Элитное подразделение</li>
                         <li>Высший уровень доступа</li>
                         <li>Ответственные за ключевые операции</li>
@@ -53,8 +63,8 @@
                     </ul>
                 </div>
                 <div class="bg-alpha-dark/70 p-6 rounded-lg border border-alpha-primary/30">
-                    <h3 class="text-2xl font-semibold text-alpha-primary mb-4">ALPHA B</h3>
-                    <ul class="space-y-2 list-disc pl-5">
+                    <h3 class="text-2xl font-semibold text-alpha-primary mb-4">ПСБ B</h3>
+<ul class="space-y-2 list-disc pl-5">
                         <li>Оперативное подразделение</li>
                         <li>Средний уровень доступа</li>
                         <li>Выполнение стандартных заданий</li>
@@ -67,74 +77,95 @@
                 <p>Переход между отрядами осуществляется через поединок на FutureTops. Кандидат должен доказать свою состоятельность в бою против действующего члена целевого отряда.</p>
             </div>
         </section>
-
-        <!-- Section 3: Morphs -->
-        <section id="morphs" class="mb-16 scroll-mt-20">
-            <h2 class="text-3xl font-bold mb-6 text-alpha-primary border-b border-alpha-primary pb-2">Пункт 3. Морфы</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <!-- ALPHA A Card -->
-                <div class="bg-alpha-dark/70 p-6 rounded-lg border border-alpha-primary/30 flex flex-col md:flex-row gap-6">
-                    <div class="flex-shrink-0">
-                        <img src="http://static.photos/black/320x240/1" alt="ALPHA A Morph" class="w-52 h-auto border border-alpha-primary/50 rounded">
+<!-- Section 4: Behavior -->
+        <section id="behavior" class="mb-16 scroll-mt-20">
+            <div class="flex justify-between items-center mb-6">
+            </div>
+<h2 class="text-3xl font-bold mb-6 text-alpha-primary border-b border-alpha-primary pb-2">Пункт 4. Поведение и порядок</h2>
+<div class="bg-alpha-dark/70 p-6 rounded-lg border border-alpha-primary/30">
+                <p class="mb-4">Все члены отряда ПСБ обязаны соблюдать установленные правила поведения и субординацию. Нарушения караются в соответствии с тяжестью проступка.</p>
+                <p class="text-alpha-accent">Основные правила поведения:</p>
+                <ul class="space-y-2 list-disc pl-5 mt-2">
+                    <li>Соблюдать субординацию и уважать старших по званию</li>
+                    <li>Не разглашать внутреннюю информацию отряда</li>
+                    <li>Поддерживать дисциплину и порядок в комплексе</li>
+                    <li>Быть примером для младших званий</li>
+                </ul>
 </div>
+        </section>
+
+        <!-- Section 5: Juggernaut Rules -->
+        <section id="juggernaut" class="mb-16 scroll-mt-20">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-3xl font-bold mb-6 text-alpha-primary border-b border-alpha-primary pb-2">Пункт 5. Правила использования Джаггернаута</h2>
+                <rank-badge rank="commander" color="#4a90e2"></rank-badge>
+            </div>
+            <div class="bg-alpha-dark/70 p-6 rounded-lg border border-alpha-primary/30">
+                <div class="grid md:grid-cols-2 gap-8">
                     <div>
-                        <h3 class="text-2xl font-semibold text-alpha-primary mb-4">ALPHA A</h3>
-                        <h4 class="text-lg font-medium mb-2">Стандартное вооружение:</h4>
-                        <ul class="space-y-1 list-disc pl-5">
-                            <li>M4A1 / HK416</li>
-                            <li>Glock 19</li>
-                            <li>Тактический нож</li>
-                            <li>Дымовые гранаты</li>
-                            <li>Бронежилет IV класса</li>
+                        <h3 class="text-xl font-semibold text-alpha-primary mb-4">Требования к составу:</h3>
+                        <ul class="space-y-2 list-disc pl-5">
+                            <li>Минимальное звание для доступа к джаггернауту: Сержант</li>
+                            <li>Разрешение офицера</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-alpha-primary mb-4">Условия применения:</h3>
+                        <ul class="space-y-2 list-disc pl-5">
+                            <li>Если на сервере есть 6 рейдеров и выше.</li>
+                            <li>Разрешено брать если в комплексе заражение / мутанты.</li>
                         </ul>
                     </div>
                 </div>
-
-                <!-- ALPHA B Card -->
-                <div class="bg-alpha-dark/70 p-6 rounded-lg border border-alpha-primary/30 flex flex-col md:flex-row gap-6">
-                    <div class="flex-shrink-0">
-                        <img src="http://static.photos/black/320x240/1" alt="ALPHA B Morph" class="w-52 h-auto border border-alpha-primary/50 rounded">
-</div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-alpha-primary mb-4">ALPHA B</h3>
-                        <h4 class="text-lg font-medium mb-2">Стандартное вооружение:</h4>
-                        <ul class="space-y-1 list-disc pl-5">
-                            <li>MP5 / P90</li>
-                            <li>USP Tactical</li>
-                            <li>Тактический нож</li>
-                            <li>Светошумовые гранаты</li>
-                            <li>Бронежилет III класса</li>
-                        </ul>
-                    </div>
+                <div class="mt-6">
+                    <p class="text-alpha-accent">Нарушение данных правил влечет за собой выдачу варна.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Section 4: Behavior -->
-        <section id="behavior" class="mb-16 scroll-mt-20">
-            <h2 class="text-3xl font-bold mb-6 text-alpha-primary border-b border-alpha-primary pb-2">Пункт 4. Поведение и порядок</h2>
+        <!-- Section 6: Event Rules -->
+        <section id="events" class="mb-16 scroll-mt-20">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-3xl font-bold mb-6 text-alpha-primary border-b border-alpha-primary pb-2">Пункт 6. Правила проведения мероприятий</h2>
+                <status-indicator status="busy"></status-indicator>
+            </div>
             <div class="bg-alpha-dark/70 p-6 rounded-lg border border-alpha-primary/30">
-                <p class="mb-4">Все члены отряда ALPHA обязаны соблюдать установленные правила поведения и субординацию. Нарушения караются в соответствии с тяжестью проступка.</p>
-                <div class="mt-4">
-                        Сюда ссылку
-                    </a>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-semibold text-alpha-primary mb-2">1. Анонс мероприятия:</h3>
+                        <ul class="space-y-2 list-disc pl-5">
+                            <li>Минимальное время анонса: 1 час до начала</li>
+                            <li>Обязательное объявление в специальном канале</li>
+                            <li>Указание времени начала мероприятия</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-alpha-primary mb-2">2. Во время мероприятия:</h3>
+                        <ul class="space-y-2 list-disc pl-5">
+                            <li>Соблюдение субординации</li>
+                            <li>Запрещено нарушать любые правила из устава</li>
+                            <li>Запрещено нарушать рп правила</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Footer Component -->
-    <custom-footer></custom-footer>
+<custom-footer></custom-footer>
     <!-- External Document Link -->
         </a>
     </div>
-<!-- Web Components -->
+    <!-- Web Components -->
     <script src="components/header.js"></script>
     <script src="components/footer.js"></script>
-
-    <script>
+    <script src="components/rank-badge.js"></script>
+    <script src="components/status-indicator.js"></script>
+    <script src="components/mission-timer.js"></script>
+<script>
         feather.replace();
-
+        
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -147,5 +178,3 @@
     </script>
 </body>
 </html>
-
-
